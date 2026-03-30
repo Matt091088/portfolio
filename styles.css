@@ -81,12 +81,22 @@ h2 {
 }
 
 #projects .card {
-  border: 1px solid #ccc;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
   border-radius: 10px;
   padding: 20px;
   margin: 15px 0;
-  background: #f9f9f9;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+#projects .card a {
+  color: #00adb5;
+  font-weight: bold;
 }
 #projects .card:hover {
   transform: scale(1.02);
@@ -98,4 +108,82 @@ h2 {
   color: #007acc;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* ===== Hero ===== */
+#hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#hero .subtitle {
+  font-size: 1.3rem;
+  color: #007acc;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #007acc;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+  background: #005f99;
+}
+
+#hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#hero h1 {
+  font-size: 2.8rem;
+}
+
+#hero .subtitle {
+  color: #00adb5;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.hero-buttons a {
+  background: #00adb5;
+}
+
+.hero-buttons a:hover {
+  background: #019ca3;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+p {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+ul {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  letter-spacing: 1px;
 }
